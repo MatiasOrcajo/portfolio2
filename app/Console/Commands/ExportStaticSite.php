@@ -18,6 +18,7 @@ class ExportStaticSite extends Command
         $routes = [
             '/' => 'home',
             '/projects/factibilidad' => 'projects.factibilidad',
+            '/projects/areacostanera' => 'projects.areacostanera',
 
         ];
 

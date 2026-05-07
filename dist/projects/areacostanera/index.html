@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>AreaCostanera | Matías Orcajo</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231e293b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='52' font-weight='bold' fill='%23f8fafc'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
+    <meta name="description" content="Sistema de gestión integral para fiestas de egresados. Cotización, menú, invitados, control de pagos en cuotas y reportes.">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Nunito', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+<main class="min-h-screen">
+    <div class="max-w-3xl mx-auto px-4 py-12">
+            
+    <header class="mb-12">
+        <div class="mb-6">
+            <a href="/" class="text-sm text-gray-500 hover:text-gray-700 transition-colors inline-flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                Volver al portafolio
+            </a>
+        </div>
+        <div class="space-y-4">
+            <div class="flex items-center gap-3">
+                <h1 class="text-3xl font-bold">AreaCostanera</h1>
+                <span class="px-2 py-0.5 rounded text-xs font-medium text-green-700 bg-green-50">Producción</span>
+            </div>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-2xl">
+                Sistema de gestión interna desarrollado a medida para una empresa organizadora de fiestas de egresados.
+                Abarca el ciclo completo de cada evento, desde la cotización inicial hasta el control de pagos y reportes.
+            </p>
+        </div>
+    </header>
+
+    
+    <section class="mb-12">
+        <h2 class="text-xl font-bold mb-4">Visión general del sistema</h2>
+        <div class="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+                La empresa <strong>AreaCostanera</strong> necesitaba una herramienta para administrar sus fiestas de egresados de manera eficiente.
+                Antes de este desarrollo, la gestión se realizaba con planillas y procesos manuales que dificultaban el seguimiento
+                de cada evento y la situación financiera de los alumnos.
+            </p>
+            <p>
+                La plataforma permite <strong>crear un evento</strong> asignando escuela, curso, cantidad de egresados, fecha y menú.
+                A partir de ahí se <strong>cargan los alumnos y sus familiares/invitados</strong>, se configuran descuentos
+                y se registran los pagos en cuotas. El sistema calcula automáticamente los intereses por mora y muestra
+                el estado de deuda de cada alumno en tiempo real.
+            </p>
+            <p>
+                Los administradores disponen de un <strong>panel con reportes</strong> de eventos y de cobros por día,
+                lo que facilita la toma de decisiones y la rendición de cuentas. Toda acción de los usuarios queda
+                registrada en un historial para garantizar la trazabilidad.
+            </p>
+        </div>
+    </section>
+
+    
+    <section class="mb-12">
+        <h2 class="text-xl font-bold mb-4">Mi rol y contribuciones</h2>
+        <div class="p-5 border border-gray-200 rounded bg-gray-50/50">
+            <ul class="space-y-4 text-sm text-gray-700">
+                <li class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-gray-500 mt-0.5 shrink-0">
+                        <path d="M20 6 9 17l-5-5"/>
+                    </svg>
+                    <span><strong>Relevamiento de requerimientos:</strong> Mantuve reuniones con el cliente para entender el modelo de negocio, los tipos de eventos (egresados y sociales) y las reglas de cobro, intereses y cancelaciones.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-gray-500 mt-0.5 shrink-0">
+                        <path d="M20 6 9 17l-5-5"/>
+                    </svg>
+                    <span><strong>Diseño de base de datos y arquitectura:</strong> Modelé todo el esquema de datos (eventos, alumnos, invitados, pagos, cuotas, descuentos, menús) asegurando integridad y flexibilidad para futuros cambios.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-gray-500 mt-0.5 shrink-0">
+                        <path d="M20 6 9 17l-5-5"/>
+                    </svg>
+                    <span><strong>Desarrollo full stack:</strong> Implementé el backend con Laravel y el frontend con AdminLTE, DataTables y Blade. Creé el sistema de autenticación, el CRUD de todas las entidades y la lógica de cálculo de deuda.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-gray-500 mt-0.5 shrink-0">
+                        <path d="M20 6 9 17l-5-5"/>
+                    </svg>
+                    <span><strong>Puesta en producción y mantenimiento:</strong> Configuré el servidor, desplegué la aplicación y brindé soporte continuo para ajustes y nuevas funcionalidades solicitadas por el cliente.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section class="mb-12">
+        <h2 class="text-xl font-bold mb-6">Flujo de trabajo principal</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-5 border border-gray-200 rounded">
+                <div class="text-2xl font-bold text-gray-300 mb-2">1</div>
+                <h3 class="font-bold mb-1">Cotización y creación del evento</h3>
+                <p class="text-sm text-gray-600">Se registra la escuela, el curso, la cantidad de egresados, la fecha del evento y el menú seleccionado. El sistema calcula el costo base automáticamente.</p>
+            </div>
+            <div class="p-5 border border-gray-200 rounded">
+                <div class="text-2xl font-bold text-gray-300 mb-2">2</div>
+                <h3 class="font-bold mb-1">Carga de alumnos e invitados</h3>
+                <p class="text-sm text-gray-600">Se incorporan los egresados con sus familiares o invitados. Se pueden aplicar descuentos por alumno y visualizar el saldo pendiente en todo momento.</p>
+            </div>
+            <div class="p-5 border border-gray-200 rounded">
+                <div class="text-2xl font-bold text-gray-300 mb-2">3</div>
+                <h3 class="font-bold mb-1">Seguimiento de pagos y cierre</h3>
+                <p class="text-sm text-gray-600">Registro de pagos parciales, cálculo de intereses por cuotas vencidas y cancelación total de la deuda. Los reportes muestran el estado financiero de cada evento.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="mb-12">
+        <h2 class="text-xl font-bold mb-6">Funcionalidades principales</h2>
+        <div class="space-y-5">
+            <div class="p-5 border border-gray-200 rounded">
+                <h3 class="font-bold flex items-center gap-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-500"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h6"/><path d="M12 9v6"/></svg>
+                    Dashboard y creación rápida de eventos
+                </h3>
+                <p class="text-sm text-gray-600">Pantalla inicial con resumen de eventos activos (egresados y sociales). Modales para crear nuevos eventos sin salir del dashboard, agilizando la operatoria diaria.</p>
+            </div>
+            <div class="p-5 border border-gray-200 rounded">
+                <h3 class="font-bold flex items-center gap-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Gestión de alumnos y pagos
+                </h3>
+                <p class="text-sm text-gray-600">Listado de alumnos por evento con búsqueda y filtros. Registro de familiares, asignación de descuentos (monto fijo o porcentual) y control de cuotas con cálculo automático de intereses.</p>
+            </div>
+            <div class="p-5 border border-gray-200 rounded">
+                <h3 class="font-bold flex items-center gap-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-500"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></svg>
+                    Reportes de eventos y cobros
+                </h3>
+                <p class="text-sm text-gray-600">Informes detallados con y sin columnas de administración. Reporte de cobros filtrado por día para conciliaciones y seguimiento financiero.</p>
+            </div>
+            <div class="p-5 border border-gray-200 rounded">
+                <h3 class="font-bold flex items-center gap-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-500"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Administración y configuración
+                </h3>
+                <p class="text-sm text-gray-600">CRUD completo de escuelas, días disponibles, menús (con historial de cambios de precio), menús especiales y formas de pago. Todo editable desde el panel.</p>
+            </div>
+            <div class="p-5 border border-gray-200 rounded">
+                <h3 class="font-bold flex items-center gap-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-500"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Trazabilidad y registro de actividad
+                </h3>
+                <p class="text-sm text-gray-600">Cada acción de los usuarios (creación, edición, eliminación) queda almacenada en un historial con fecha, usuario y detalle. Esto permite auditar cambios y mantener la seguridad de los datos.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="mb-12">
+        <h2 class="text-xl font-bold mb-4">Stack tecnológico</h2>
+        <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">Laravel</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">PHP</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">MySQL</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">AdminLTE</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">DataTables</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">Blade</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">JavaScript</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">jQuery</span>
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded text-sm font-mono">Vite</span>
+        </div>
+    </section>
+
+    
+    <div class="border-t border-gray-200 pt-8 mt-8">
+        <a href="/" class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            Volver al portafolio
+        </a>
+    </div>
+    </div>
+</main>
+</body>
+</html>
