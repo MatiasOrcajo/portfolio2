@@ -1,0 +1,5 @@
+{
+    "buildCommand": "php artisan export:static",
+    "outputDirectory": "dist",
+    "cleanUrls": true
+}
