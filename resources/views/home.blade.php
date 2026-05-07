@@ -62,7 +62,7 @@
                         <div>
                             <div class="flex items-center gap-2 mb-1">
                                 <h3 class="font-bold text-gray-900">Proyecto Factibilidad</h3>
-                                <span class="px-2 py-0.5 rounded text-xs font-medium text-green-700 bg-green-50">Production</span>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium text-green-700 bg-green-50">Producción</span>
                             </div>
                             <p class="text-gray-600 text-sm">Proyecto para Claro Argentina para la gestión de todo el servicio de venta de internet a clientes masivos.</p>
                         </div>
@@ -82,6 +82,32 @@
                 </div>
             </a>
 
+            {{-- Proyecto AreaCostanera --}}
+            <a href="/projects/areacostanera" target="_blank" class="block p-5 border border-gray-200 rounded hover:border-gray-300 hover:bg-gray-50 transition-colors">
+                <div class="space-y-3">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="font-bold text-gray-900">AreaCostanera</h3>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium text-green-700 bg-green-50">Producción</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Sistema de gestión de fiestas de egresados: cotización, menú, invitados, control de pagos en cuotas y reportes.</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-400 mt-1">
+                            <path d="M7 7h10v10"></path>
+                            <path d="M7 17 17 7"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-mono">Laravel</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-mono">MySQL</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-mono">AdminLTE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-mono">DataTables</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-mono">Blade</span>
+                    </div>
+                </div>
+            </a>
+
             {{-- Proyecto 2 --}}
             <a href="https://github.com/MatiasOrcajo/ecommerce" target="_blank" class="block p-5 border border-gray-200 rounded hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <div class="space-y-3">
@@ -89,7 +115,7 @@
                         <div>
                             <div class="flex items-center gap-2 mb-1">
                                 <h3 class="font-bold text-gray-900">Ecommerce</h3>
-                                <span class="px-2 py-0.5 rounded text-xs font-medium text-red-700 bg-red-50">Not Production</span>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium text-red-700 bg-red-50">No en Producción</span>
                             </div>
                             <p class="text-gray-600 text-sm">Ecommerce completo de punta a punta para un negocio de indumentaria.</p>
                         </div>
@@ -114,7 +140,7 @@
                         <div>
                             <div class="flex items-center gap-2 mb-1">
                                 <h3 class="font-bold text-gray-900">Http Server</h3>
-                                <span class="px-2 py-0.5 rounded text-xs font-medium text-red-700 bg-red-50">Not Production</span>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium text-red-700 bg-red-50">No en Producción</span>
                             </div>
                             <p class="text-gray-600 text-sm">Servidor HTTP/1.1 minimalista escrito desde cero en Rust, sin dependencias externas para el manejo HTTP.</p>
                         </div>
