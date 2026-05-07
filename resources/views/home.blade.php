@@ -83,7 +83,7 @@
             </a>
 
             {{-- Proyecto AreaCostanera --}}
-            <a href="/projects/areacostanera" target="_blank" class="block p-5 border border-gray-200 rounded hover:border-gray-300 hover:bg-gray-50 transition-colors">
+            <a href="/projects/areacostanera" class="block p-5 border border-gray-200 rounded hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <div class="space-y-3">
                     <div class="flex items-start justify-between">
                         <div>
