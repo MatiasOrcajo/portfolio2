@@ -6,10 +6,9 @@
 
     {{-- Título dinámico --}}
     <title>@yield('title', 'Tu Nombre | Backend Engineer')</title>
+    {{-- Favicon SVG --}}
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231e293b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='52' font-weight='bold' fill='%23f8fafc'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
     <meta name="description" content="@yield('meta_description', 'Backend engineer specializing in distributed systems and scalable architecture.')">
-
-    {{-- Favicon --}}
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     {{-- Fuentes (Similar a las usadas en el sitio original) --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
