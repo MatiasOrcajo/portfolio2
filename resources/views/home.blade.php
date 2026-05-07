@@ -56,7 +56,7 @@
         <div class="space-y-6">
 
             {{-- Proyecto 1 --}}
-            <a href="{{ url('/projects/factibilidad') }}" class="block p-5 border border-gray-200 rounded hover:border-gray-300 hover:bg-gray-50 transition-colors">
+            <a href="/projects/factibilidad" class="block p-5 border border-gray-200 rounded hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <div class="space-y-3">
                     <div class="flex items-start justify-between">
                         <div>

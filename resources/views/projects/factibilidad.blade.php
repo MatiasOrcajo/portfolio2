@@ -7,7 +7,7 @@
     {{-- Encabezado del proyecto --}}
     <header class="mb-12">
         <div class="mb-6">
-            <a href="{{ url('/') }}" class="text-sm text-gray-500 hover:text-gray-700 transition-colors inline-flex items-center gap-1">
+            <a href="/" class="text-sm text-gray-500 hover:text-gray-700 transition-colors inline-flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
                 Volver al portafolio
             </a>
